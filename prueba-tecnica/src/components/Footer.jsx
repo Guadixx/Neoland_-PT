@@ -10,67 +10,59 @@ const Footer = () => {
         <div className="box">
           <section className="links">
             <ul>
-              <li>
-                Home
-              </li>
-              <li>
-                Terms and Conditions
-              </li>
-              <li>
-            Privacy Policy
-              </li>
-              <li>
-              Collection Statement
-              </li>
-              <li>
-              Help
-              </li>
-              <li>
-              Manage Acount
-              </li>
+                <li>
+                  <NavLink to="home">Home </NavLink>
+                </li>
+                <li>
+                  <NavLink to="terms">Terms and Conditions </NavLink>
+                </li>
+                <li>
+                  <NavLink to="privacypol">Privacy Policy </NavLink>
+                </li>
+                <li>
+                  <NavLink to="collects">Collection Statement </NavLink>
+                </li>
+                <li>
+                  <NavLink to="help">Help </NavLink>
+                </li>
+                <li>
+                  <NavLink to="mngaccount">Manage Account </NavLink>
+                </li>
             </ul>
             <div className="underText">
             <h3>@Copyright All rights reserved.</h3>
           </div>
           </section>
-        </div>
-        <div className="underbox">
+        <div classname="underbox">
           <section className="socials">
             <ul>
-              <li>
-                <a href="https://www.marvel.com/corporate/advertising">
+            <li>
+                <a href="">
                   <img
-                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1677229606/Marvel/iconos/marketing_nagtbo.png"
-                    alt="Network icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/Marvel/">
-                  <img
-                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1677229607/Marvel/iconos/facebook_rnnqdo.png"
+                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1678628445/Prueba%20tecnica/facebook-white_m2zav0.svg"
                     alt="Facebook icon"
                   />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/kareenadg/MARVEL_GROUP_project">
+                <a href="">
                   <img
-                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1677229606/Marvel/iconos/github_beunqm.png"
-                    alt="Github icon"
+                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1678628446/Prueba%20tecnica/twitter-white_f5jccl.svg"
+                    alt="Twitter icon"
                   />
                 </a>
               </li>
               <li>
-                <a href="https://open.spotify.com/playlist/0mYWUKxLlvP4YDMe8qke84?si=hyQpETY0SEu5cKe4MZASMg">
+                <a href="">
                   <img
-                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1677229605/Marvel/iconos/spotify_dbqwu1.png"
-                    alt="Spotify icon"
+                    src="https://res.cloudinary.com/dpidlverd/image/upload/v1678628445/Prueba%20tecnica/instagram-white_mbipb1.svg"
+                    alt="Instagram icon"
                   />
                 </a>
               </li>
             </ul>
           </section>
+        </div>
         </div>
       </footer>
     </div>

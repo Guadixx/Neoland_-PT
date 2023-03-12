@@ -1,0 +1,48 @@
+.home_title {
+    max-width: 100%;
+    height: 4rem;
+    background-color: grey;
+    padding: 1rem 5rem;
+  }
+
+  .home_title > h3 {
+    color:whitesmoke;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .content {
+    padding: 1rem 5rem;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+  }
+
+  .content > figure {
+    height: 220px;
+    width: 176px;
+    padding: 1.4rem;
+    text-align: center;
+  }
+
+  .content > figure > a > img {
+    height: 120%;
+    width: 120%;
+    object-fit: cover;
+    margin: 0.5rem;
+  }
+
+  .series {
+    margin: 6rem;
+  }
+  .content > .series::after {
+    display: flex;
+    justify-content: center;
+    content: 'Series';
+    z-index: 0;
+    color: white;
+    font-size: 27px;
+  }
