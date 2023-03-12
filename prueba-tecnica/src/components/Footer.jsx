@@ -11,30 +11,31 @@ const Footer = () => {
           <section className="links">
             <ul>
                 <li>
-                  <NavLink to="home">Home </NavLink>
+                  <NavLink to="home">| Home </NavLink>
                 </li>
                 <li>
-                  <NavLink to="terms">Terms and Conditions </NavLink>
+                  <NavLink to="terms">| Terms and Conditions </NavLink>
                 </li>
                 <li>
-                  <NavLink to="privacypol">Privacy Policy </NavLink>
+                  <NavLink to="privacypol">| Privacy Policy </NavLink>
                 </li>
                 <li>
-                  <NavLink to="collects">Collection Statement </NavLink>
+                  <NavLink to="collects">| Collection Statement </NavLink>
                 </li>
                 <li>
-                  <NavLink to="help">Help </NavLink>
+                  <NavLink to="help">| Help </NavLink>
                 </li>
                 <li>
-                  <NavLink to="mngaccount">Manage Account </NavLink>
+                  <NavLink to="mngaccount">| Manage Account </NavLink>
                 </li>
             </ul>
             <div className="underText">
             <h3>@Copyright All rights reserved.</h3>
           </div>
           </section>
-        <div classname="underbox">
-          <section className="socials">
+        </div>
+        <div className="socials_container" >
+        <section className="socials">
             <ul>
             <li>
                 <a href="">
@@ -62,7 +63,6 @@ const Footer = () => {
               </li>
             </ul>
           </section>
-        </div>
         </div>
       </footer>
     </div>

@@ -2,11 +2,12 @@ import './Home.css'
 import { NavLink } from 'react-router-dom';
 const Home = () => {
     return (
+      <main className="container">
     <div>
         <div className= "home_title">
             <h3>Popular Titles</h3>
         </div>
-        <div className="content">
+        <div className="img_container">
         <figure className="series">
           <NavLink to="series">
             <img
@@ -26,7 +27,8 @@ const Home = () => {
           </NavLink>
         </figure>
       </div>
-    </div>)
+    </div>
+    </main>)
 }
 
 export default Home 

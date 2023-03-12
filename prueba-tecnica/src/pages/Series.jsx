@@ -4,6 +4,7 @@ const Series = () => {
     const [series, setSeries] = useState([]);
     const [allApi, setAllApi] = useState([]);
     const [filteredSeries, setFilteredSeries] = useState([]);
+    const [loaded, setLoaded] = useState(false);
     let filter = [];
 
     const getAll = async () => {
@@ -11,8 +12,11 @@ const Series = () => {
           'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json',
         )
           .then((res) => res.json())
-          .then((res) => setAllApi(res.entries));}
-          console.log(series)
+          .then((res) => setAllApi(res.entries));
+        
+          setLoaded(true);
+          setFilteredSeries(sortSeries);
+        }
 
           const filterSeries = allApi.filter((serie) => serie.programType === 'series' && serie.releaseYear >= 2010,);
           filterSeries.splice(21)
@@ -29,12 +33,12 @@ const Series = () => {
             <h3>Popular Series</h3>
           </div>
           <div className="series_card">
-            { filterSeries.map((serie) => (
+            {loaded ?  (filterSeries.map((serie) => (
                 <div key={serie.title}>
                   <img src={serie.images['Poster Art'].url} alt={serie.title} />
                   <h4>{serie.title}</h4>
-                </div>
-              ))
+                </div>)
+              )) : (<h4>Loading...</h4>)
         }
           </div>
         </div>
